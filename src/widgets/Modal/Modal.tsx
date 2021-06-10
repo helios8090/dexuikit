@@ -23,22 +23,24 @@ const StyledModal = styled.div`
   overflow-y: auto;
   ${({ theme }) => theme.mediaQueries.xs} {
     width: auto;
-    min-width: 452px;
+    min-width: 370px;
     max-width: 100%;
+    position: relative;
   }
 `;
 
 const ModalHeader = styled.div`
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #e9eaeb;
   align-items: center;
   padding: 12px 24px;
+  position: relative;
 `;
 
 const ModalTitle = styled(Flex)`
   align-items: center;
   flex: 1;
+  position:relative;
 `;
 
 const Modal: React.FC<Props> = ({
@@ -63,7 +65,7 @@ const Modal: React.FC<Props> = ({
         <IconButton variant="text" onClick={onDismiss} aria-label="Close the dialog">
           <CloseIcon color="primary" />
         </IconButton>
-      )}
+      )}       
     </ModalHeader>
     <Flex flexDirection="column" p={bodyPadding}>
       {children}

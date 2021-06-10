@@ -21,6 +21,8 @@ const Heading = styled(Text).attrs({ bold: true })<HeadingProps>`
   ${({ size }) => style[size || sizes.LG]}
   font-weight:600;
   line-height: 1.1;
+  margin: auto;
+  margin-top:28px;
 `;
 
 Heading.defaultProps = {
