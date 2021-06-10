@@ -11,7 +11,7 @@ const WalletButton: React.FC<ButtonProps> = ({ startIcon, endIcon, children, ext
   return (
     <StyledButton {...internalProps} {...props} isLoading={isLoading} disabled={isDisabled} size={"sm"} 
     style={{position:"relative",overflow:"hidden",justifyContent:"space-between", borderRadius:"20px", height:"64px", color:"#101035", 
-    fontWeight:700, backgroundColor:"#F5F5F5", width:"452px"}}>
+    fontWeight:700, backgroundColor:"#F5F5F5"}}>
       {React.isValidElement(startIcon) &&
         React.cloneElement(startIcon, {
           mr: "0.5rem",
