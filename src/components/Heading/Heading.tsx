@@ -7,7 +7,7 @@ const style = {
     fontSize: "20px",
   },
   [sizes.LG]: {
-    fontSize: "24px",
+    fontSize: "28px",
   },
   [sizes.XL]: {
     fontSize: "40px",
@@ -18,7 +18,7 @@ const style = {
 };
 
 const Heading = styled(Text).attrs({ bold: true })<HeadingProps>`
-  ${({ size }) => style[size || sizes.MD]}
+  ${({ size }) => style[size || sizes.LG]}
   font-weight:600;
   line-height: 1.1;
 `;

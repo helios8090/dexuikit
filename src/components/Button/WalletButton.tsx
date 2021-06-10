@@ -8,7 +8,8 @@ const WalletButton: React.FC<ButtonProps> = ({ startIcon, endIcon, children, ext
   const isDisabled = isLoading || disabled;
 
   return (
-    <StyledButton {...internalProps} {...props} isLoading={isLoading} disabled={isDisabled} style={{position:"relative",overflow:"hidden",justifyContent:"space-between"}}>
+    <StyledButton {...internalProps} {...props} isLoading={isLoading} disabled={isDisabled} size={"sm"} 
+    style={{position:"relative",overflow:"hidden",justifyContent:"space-between", borderRadius:"20px", height:"64px", color:"#101035", fontWeight:700}}>
       {React.isValidElement(startIcon) &&
         React.cloneElement(startIcon, {
           mr: "0.5rem",
